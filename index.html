@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Food</title>
+    <link rel="stylesheet" href="css/tailwind.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="flex justify-between absolute w-full text-white uppercase py-6 px-6 md:py-12 md:px-24 font-bold overflow-x-hidden">
+        <div><a href="#">Brunch</a></div>
+        <div class="navbar-toggle cursor-pointer absolute right-5 md:hidden" onclick="openMenu()">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+        </div>
+        <nav class="h-screen">
+            <div id="navbar" class="responsive-nav">
+                <div class="mb-3 md:hidden">
+                    <svg class="h-6 w-6" onclick="closeMenu()" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </div>
+                <ul class="flex flex-col gap-5 md:flex-row">
+                    <li><a href="#">Welcome</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section class="main-section flex flex-col justify-center items-center min-h-screen">
+        <div class="w-3/4 md:w-2/5 h-1/2 absolute flex flex-col gap-3 justify-center items-center">
+            <h1 class="text-5xl md:text-6xl">Brunch</h1>
+            <p class="uppercase text-3xl md:text-5xl text-yellow-700 font-semibold">Full Website</p>
+            <div class="px-4 py-1 bg-white text-lg md:text-2xl font-semibold">
+                <a href="#" class="uppercase">Read more</a>
+            </div>
+        </div>
+    </section>
+    <section class="traditional-flavour flex items-center justify-center">
+        <div class="w-3/4 flex flex-col-reverse md:flex-row items-center gap-6 py-12">
+            <div class="text-white w-full md:w-1/2">
+                <h2 class="text-xl font-bold pb-4">Indian traditional flavours</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris </p>
+            </div>
+            <div class="w-full md:w-1/2">
+                <img class="object-cover" src="images/flavours.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="dish-details py-20 flex justify-center">
+        <div class="w-4/5 flex flex-col md:flex-row gap-6">
+            <div>
+                <div class="flex gap-0.5 mb-4">
+                    <span class="dots"></span>
+                </div>
+                <p class="pb-5 font-bold">New tastes</p>
+                <p>Lorem ipsum dolor sit amet, consecte sectetur adipisicing elit, tation omne ullamco laboris nisi ut aliqolore.</p>
+            </div>
+            <div>
+                <div class="flex gap-0.5 mb-4">
+                    <span class="dots"></span>
+                    <span class="dots"></span>
+                </div>
+                <p class="pb-5 font-bold">New spices</p>
+                <p>Lorem ipsum dolor sit amet, consecte sectetur adipisicing elit, tation omne ullamco laboris nisi ut aliqolore.</p>
+            </div>
+            <div>
+                <div class="flex gap-0.5 mb-4">
+                    <span class="dots"></span>
+                    <span class="dots"></span>
+                    <span class="dots"></span>
+                </div>
+                <p class="pb-5 font-bold">New dishes</p>
+                <p>Lorem ipsum dolor sit amet, consecte sectetur adipisicing elit, tation omne ullamco laboris nisi ut aliqolore.</p>
+            </div>
+        </div>
+    </section>
+    <section class="menu-section flex justify-center items-center">
+        <div class="menus w-4/5 flex flex-col items-center my-16">
+            <div class="menu-heading w-full py-5 text-center">
+                <h1 class="text-5xl ">India</h1>
+                <p class="text-3xl md:text-4xl text-yellow-700 font-semibold uppercase">On your plate</p>
+            </div>
+            <div class="flex w-full">
+                <div class="flex flex-wrap gap-5 md:gap-0">
+                    <div class="flex flex-col md:flex-row justify-center items-center text-center gap-3 md:gap-0 w-full md:w-1/2">
+                        <div class="object-cover w-full md:w-1/2 border">
+                            <img class="w-full" src="images/tikka-chiken.jpg" alt="">
+                        </div>
+                        <div class="w-full md:w-1/2 px-9 flex flex-col justify-center h-full">
+                            <h3 class="font-bold uppercase">Tikka Chicken</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do</p>
+                            <span class="font-bold">$14.95</span>
+                        </div>
+                    </div>
+                    <div class="flex flex-col md:flex-row justify-center items-center text-center gap-3 md:gap-0 w-full md:w-1/2">
+                        <div class="object-cover w-full md:w-1/2 border">
+                            <img class="w-full" src="images/spicy-wedges.jpg" alt="">
+                        </div>
+                        <div class="w-full md:w-1/2 px-9 flex flex-col justify-center h-full">
+                            <h3 class="font-bold uppercase">Spicy Wedges</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do</p>
+                            <span class="font-bold">$10.95</span>
+                        </div>
+                    </div>
+                    <div class="flex flex-col-reverse md:flex-row justify-center items-center text-center gap-3 md:gap-0 w-full md:w-1/2">
+                        <div class="w-full md:w-1/2 px-9 flex flex-col justify-center h-full">
+                            <h3 class="font-bold uppercase">Chicken Curry</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do</p>
+                            <span class="font-bold">$14.95</span>
+                        </div>
+                        <div class="object-cover w-full md:w-1/2 border">
+                            <img class="w-full" src="images/chiken-curry.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="flex flex-col-reverse md:flex-row justify-center items-center text-center gap-3 md:gap-0 w-full md:w-1/2">
+                        <div class="w-full md:w-1/2 px-9 flex flex-col justify-center h-full">
+                            <h3 class="font-bold uppercase">Red Curry</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do</p>
+                            <span class="font-bold">$18.95</span>
+                        </div>
+                        <div class="object-cover w-full md:w-1/2 border">
+                            <img class="w-full" src="images/red-curry.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="flex flex-col md:flex-row justify-center items-center text-center gap-3 md:gap-0 w-full md:w-1/2">
+                        <div class="object-cover w-full md:w-1/2 border">
+                            <img class="w-full" src="images/spicy-veggies.jpg" alt="">
+                        </div>
+                        <div class="w-full md:w-1/2 px-9 flex flex-col justify-center h-full">
+                            <h3 class="font-bold uppercase">Spicy Veggies</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do</p>
+                            <span class="font-bold">$11.95</span>
+                        </div>
+                    </div>
+                    <div class="flex flex-col md:flex-row justify-center items-center text-center gap-3 md:gap-0 w-full md:w-1/2">
+                        <div class="object-cover w-full md:w-1/2 border">
+                            <img class="w-full" src="images/spicy-mix.jpg" alt="">
+                        </div>
+                        <div class="w-full md:w-1/2 px-9 flex flex-col justify-center h-full">
+                            <h3 class="font-bold uppercase">Spicy Mix</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do</p>
+                            <span class="font-bold">$11.95</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="dish-details flex py-16 justify-center relative">
+        <div class="absolute top-auto bottom-auto md:top-0 left-0">
+            <img class="object-cover opacity-50" src="images/pattern-1.png" alt="">
+        </div>
+        <div class="flex flex-col justify-center items-center gap-5 w-1/2 text-center z-10">
+            <h1 class="text-lg font-bold">Traditional cuisine made easy</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis</p>
+            <div class="flex gap-0.5">
+                <span class="dots"></span>
+                <span class="dots"></span>
+                <span class="dots"></span>
+            </div>
+            <ul class="flex gap-7 font-bold">
+                <li>Meals</li>
+                <li>Spices</li>
+                <li>Book</li>
+                <li>Gallery</li>
+            </ul>
+        </div>
+        <div class="absolute top-auto bottom-auto md:top-0 right-0">
+            <img class="object-cover opacity-50" src="images/pattern-2.png" alt="">
+        </div>
+    </section>
+    <section class="discover-menu pt-52">
+        <div class="menu-card flex flex-col gap-10 items-center py-7">
+            <div class="w-11/12">
+                <div class="menu-heading text-center">
+                    <h1 class="text-5xl">Discover</h1>
+                    <p class="text-3xl md:text-4xl text-yellow-700 uppercase font-semibold">Our new menu</p>
+                </div>
+                <div class="flex flex-wrap flex-col md:flex-row justify-between gap-y-10 mt-7">
+                    <div class="w-full md:w-2/5 flex gap-2 items-center">
+                        <div class="menu-items">
+                            <img src="images/chicken.png" alt="chicken">
+                        </div>
+                        <div>
+                            <h5 class="uppercase font-bold">Tikka chicken</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do oculis <span class="font-bold">$14.95</span></p>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-2/5 flex gap-2 items-center">
+                        <div class="menu-items">
+                            <img src="images/chole-bhature.png" alt="chicken">
+                        </div>
+                        <div>
+                            <h5 class="uppercase font-bold">Soup of the day</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do oculis <span class="font-bold">$7.95</span></p>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-2/5 flex gap-2 items-center">
+                        <div class="menu-items">
+                            <img src="images/chapati.png" alt="chicken">
+                        </div>
+                        <div>
+                            <h5 class="uppercase font-bold">Plain papadums</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do oculis <span class="font-bold">$1.95</span></p>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-2/5 flex gap-2 items-center">
+                        <div class="menu-items">
+                            <img src="images/yellow-curry.png" alt="chicken">
+                        </div>
+                        <div>
+                            <h5 class="uppercase font-bold">Yellow curry</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do oculis <span class="font-bold">$15.95</span></p>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-2/5 flex gap-2 items-center">
+                        <div class="menu-items">
+                            <img src="images/curry.png" alt="chicken">
+                        </div>
+                        <div>
+                            <h5 class="uppercase font-bold">Chicken curry</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do oculis <span class="font-bold">$12.95</span></p>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-2/5 flex gap-2 items-center">
+                        <div class="menu-items">
+                            <img src="images/laddu.png" alt="chicken">
+                        </div>
+                        <div>
+                            <h5 class="uppercase font-bold">Spicy Meatballs</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do oculis <span class="font-bold">$18.95</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div>
+            <img class="w-full" src="images/section3.jpg" alt="">
+        </div>
+    </section>
+    <section class="book-here flex justify-center">
+        <div class="flex flex-col w-9/12 py-10 gap-5">
+            <div class="book-fields text-white text-5xl text-center">
+                <h1>Book Here</h1>
+            </div>
+            <form id="bookingForm">
+                <div class="flex flex-wrap flex-col md:flex-row justify-center gap-x-24 gap-y-10">
+                    <div class="w-full md:w-1/4 flex flex-col gap-1">
+                        <label for="people" class="text-white">How many people?</label>
+                        <select class="p-2 bg-transparent text-white rounded-md border border-white outline-none" name="people id="people">
+                            <option value="" class="text-black">Select People</option>
+                            <option value="" class="text-black">1 people</option>
+                            <option value="" class="text-black">2 people</option>
+                            <option value="" class="text-black">3 people</option>
+                        </select>
+                    </div>
+                    <div class="w-full md:w-1/4 flex flex-col gap-1">
+                        <label for="date" class="text-white">What is your date?</label>
+                        <input class="w-full p-2 bg-transparent text-white rounded-md border border-white outline-none" type="date" name="date" id="date">
+                    </div>
+                    <div class="w-full md:w-1/4 flex flex-col gap-1">
+                        <label for="time" class="text-white">Time</label>
+                        <input class="w-full p-2 bg-transparent text-white rounded-md border border-white outline-none" type="time" name="time" id="time">
+                    </div>
+                    <div class="w-full md:w-1/4 flex flex-col gap-1">
+                        <label for="name" class="text-white">Name</label>
+                        <input class="p-2 bg-transparent text-white rounded-md border border-white outline-none" id="name" name="name" type="text" placeholder="Full name">
+                    </div>
+                    <div class="w-full md:w-1/4 flex flex-col gap-1">
+                        <label for="email" class="text-white">Email</label>
+                        <input class="p-2 bg-transparent text-white rounded-md border border-white outline-none" type="email" name="email" id="email" placeholder="Your email address">
+                    </div>
+                    <div class="w-full md:w-1/4 flex flex-col gap-1">
+                        <label for="phone" class="text-white">Phone</label>
+                        <input class="p-2 bg-transparent text-white rounded-md border border-white outline-none" type="text" name="phone" id="phone" placeholder="Your phone number">
+                    </div>
+                    <div class="text-center">
+                        <button class="px-10 py-2 bg-transparent text-white rounded-md border border-white outline-none">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <section>
+        <div>
+            <img class="w-full" src="images/section4.jpg" alt="">
+        </div>
+    </section>
+    <section class="new-menu flex justify-center">
+        <div class="w-4/5 py-10 flex flex-col gap-6">
+            <div class="menu-heading text-center">
+                <h1 class="text-5xl">Discover</h1>
+                <p class="text-3xl md:text-4xl text-yellow-700 uppercase font-semibold">Our new menu</p>
+            </div>
+            <div class="flex flex-col md:flex-row gap-8">
+                <div class="w-full md:w-1/3">
+                    <div class="object-cover">
+                        <img class="w-full" src="images/menu1.jpg" alt="">
+                    </div>
+                    <div class="flex flex-col gap-y-3 bg-white py-6 px-4">
+                        <span class="font-bold text-sm">Food / 16th March, 2019</span>
+                        <div>
+                            <h3 class="font-bold">Lorem ipsum dolor sit</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed</p>
+                        </div>
+                        <a class="read-more font-bold uppercase" href="#">Read More</a>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/3">
+                    <div class="object-cover">
+                        <img class="w-full" src="images/menu2.jpg" alt="">
+                    </div>
+                    <div class="flex flex-col gap-y-3 bg-white py-6 px-4">
+                        <span class="font-bold text-sm">Food / 16th March, 2019</span>
+                        <div>
+                            <h3 class="font-bold">Lorem ipsum dolor sit</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed</p>
+                        </div>
+                        <a class="read-more font-bold uppercase" href="#">Read More</a>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/3">
+                    <div class="object-cover">
+                        <img class="w-full" src="images/menu3.jpg" alt="">
+                    </div>
+                    <div class="flex flex-col gap-y-3 bg-white py-6 px-4">
+                        <span class="font-bold text-sm">Food / 16th March, 2019</span>
+                        <div>
+                            <h3 class="font-bold">Lorem ipsum dolor sit</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed</p>
+                        </div>
+                        <a class="read-more font-bold uppercase" href="#">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="quote flex flex-col items-center">
+        <div class="w-3/4 md:w-1/2 text-white text-center py-8">
+            <span class="text-6xl font-bold">“</span>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis </p>
+            <p class="font-bold mt-3">Linda Steward</p>
+            <ul class="flex justify-center gap-5 mt-6">
+                <li class="w-10"><img src="images/facebook.png" alt="facebook"></li>
+                <li class="w-10"><img src="images/twitter.png" alt="twitter"></li>
+                <li class="w-10"><img src="images/instagram.png" alt="instagram"></li>
+                <li class="w-10"><img src="images/pinterest.png" alt="pinterest"></li>
+                <li class="w-10"><img src="images/google-plus.png" alt="google-plus"></li>
+            </ul>
+        </div>
+    </section>
+    <footer class="flex justify-center">
+        <div class="w-4/5 py-8 flex flex-col md:flex-row gap-10 md:gap-20">
+            <div class="w-full md:w-2/5 text-center md:text-left">
+                <h1 class="uppercase font-bold mb-5">About</h1>
+                <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor incididunt ultimam quantum</p>
+            </div>
+            <div class="w-full md:w-3/5 flex">
+                <div class="w-1/3 text-center md:text-left">
+                    <h1 class="uppercase font-bold mb-5">About</h1>
+                    <ul>
+                        <li><a href="#">Team</a></li>
+                        <li><a href="#">Join us</a></li>
+                        <li><a href="#">Ethic</a></li>
+                        <li><a href="#">Goals</a></li>
+                    </ul>
+                </div>
+                <div class="w-1/3 text-center md:text-left">
+                    <h1 class="uppercase font-bold mb-5">About</h1>
+                    <ul>
+                        <li><a href="#">Team</a></li>
+                        <li><a href="#">Join us</a></li>
+                        <li><a href="#">Ethic</a></li>
+                        <li><a href="#">Goals</a></li>
+                    </ul>
+                </div>
+                <div class="w-1/3 text-center md:text-left">
+                    <h1 class="uppercase font-bold mb-5">About</h1>
+                    <ul>
+                        <li><a href="#">Team</a></li>
+                        <li><a href="#">Join us</a></li>
+                        <li><a href="#">Ethic</a></li>
+                        <li><a href="#">Goals</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

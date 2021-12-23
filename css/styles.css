@@ -1,0 +1,108 @@
+@font-face {
+    font-family: 'Cookie', 'Raleway';
+    src: url('../fonts/Cookie-Regular.ttf');
+    src: url('../fonts/Raleway-Bold.ttf') format('truetype'),
+        url('../fonts/Raleway-Italic.ttf') format('truetype'),
+        url('../fonts/Raleway-Regular.ttf') format('truetype'),
+        url('../fonts/Raleway-SemiBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Raleway';
+    color: #2a3b40;
+}
+.main-section {
+    background-image: url('../images/header.jpg');
+    background-size: cover;
+}
+.main-section div {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+.main-section h1 {
+    font-family: 'Cookie';
+}
+.traditional-flavour {
+    background-color: #2a3b40;
+}
+.dish-details {
+    background-color: #d4d8d9;
+}
+.dish-details .dots {
+    height: 20px;
+    width: 20px;
+    background-color: #2a3b40;
+    border-radius: 100%;
+}
+.menu-section {
+    background-image: url('../images/section1.jpg');
+    background-size: cover;
+}
+.menu-section .menus {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+.menu-section .menus .menu-heading h1 {
+    font-family: 'Cookie';
+}
+.discover-menu {
+    background-image: url('../images/section2.jpg');
+    background-size: cover;
+}
+.discover-menu .menu-card {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+.discover-menu .menu-card .menu-heading h1 {
+    font-family: 'Cookie';
+    color: #2a3b40;
+}
+.menu-items {
+    background-color: #fff;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 70px;
+    height: 70px;
+}
+.book-here {
+    background-color: #2a3b40;
+}
+.book-here .book-fields {
+    font-family: 'Cookie';
+}
+#bookingForm input#date::-webkit-calendar-picker-indicator, input#time::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}
+.new-menu {
+    background-color: #d4d8d9;
+}
+.new-menu .menu-heading h1 {
+    font-family: 'Cookie';
+}
+.read-more {
+    display: block;
+    width: fit-content;
+    border-bottom: 3px solid #ff992b;
+}
+.quote {
+    background-color: #2a3b40;
+}
+footer {
+    background-color: #d4d8d9;
+}
+
+@media (max-width: 767px) {
+    .responsive-nav {
+        position: absolute;
+        right: 0;
+        top: 0;
+        background-color: #2a3b40;
+        padding: 20px;
+        z-index: 1;
+        min-height: 100vh;
+        width: 200px;
+        transform: translateX(200px);
+        transition: 0.5s;
+    }
+}
